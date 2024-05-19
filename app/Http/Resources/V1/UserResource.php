@@ -4,6 +4,7 @@ namespace App\Http\Resources\V1;
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\JsonResource;
+use App\Http\Resources\V1\TicketResource;
 
 class UserResource extends JsonResource
 {
@@ -25,7 +26,8 @@ class UserResource extends JsonResource
                     'createdAt' => $this->created_at,
                     'updatedAt' => $this->updated_at,
                 ]),
-            ]
+            ],
+            'includes' => TicketResource::collection($this->whenLoaded('tickets'))
         ];
     }
 }
