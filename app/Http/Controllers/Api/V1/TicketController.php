@@ -16,7 +16,7 @@ class TicketController extends ApiController
      */
     public function index()
     {
-        if($this->include('author')){
+        if($this->isParamIncluded('author')){
             return TicketResource::collection(Ticket::with('user')->paginate());
         }
 
