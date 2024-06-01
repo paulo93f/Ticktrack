@@ -27,7 +27,7 @@ class TicketController extends ApiController
     {
         try {
             $user = User::findOrFail($request->input('data.relationships.author.data.id'));
-        }catch (ModelNotFoundException $exception){
+        } catch (ModelNotFoundException $exception) {
             return $this->ok('User not found', [
                 'error' => 'The provided user id does not exist.'
             ]);
@@ -40,19 +40,25 @@ class TicketController extends ApiController
             'user_id' => $user->id,
         ];
 
-       return new TicketResource(Ticket::create($model));
+        return new TicketResource(Ticket::create($model));
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(Ticket $ticket)
+    public function show($ticketId)
     {
-        if($this->isParamIncluded('author')){
-            return new TicketResource($ticket->load('user'));
-        }
+        try {
+            $ticket = Ticket::findOrFail($ticketId);
 
-        return new TicketResource($ticket);
+            if ($this->isParamIncluded('author')) {
+                return new TicketResource($ticket->load('author'));
+            }
+
+            return new TicketResource($ticket);
+        } catch (ModelNotFoundException $exception) {
+            return $this->error('Ticket cannot be found', 404);
+        }
     }
 
     /**
@@ -66,8 +72,16 @@ class TicketController extends ApiController
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Ticket $ticket)
+    public function destroy($ticketId)
     {
-        //
+        try {
+            $ticket = Ticket::findOrFail($ticketId);
+            $ticket->delete();
+
+            return $this->ok('Ticket successfully deleted');
+        } catch (ModelNotFoundException $exception) {
+            return $this->error('Ticket cannot be found', 404);
+        }
+
     }
 }
