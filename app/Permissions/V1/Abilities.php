@@ -6,8 +6,8 @@ use App\Models\User;
 
 final class Abilities
 {
-    public const ADMIN = 'admin';
-    public const USER = 'user';
+//    public const ADMIN = 'admin';
+//    public const USER = 'user';
 
     public const CreateTicket = 'ticket:create';
     public const UpdateTicket = 'ticket:update';
@@ -35,14 +35,14 @@ final class Abilities
                 self::CreateUser,
                 self::UpdateUser,
                 self::ReplaceUser,
-                self::DeleteUser
+                self::DeleteUser,
+            ];
+        } else {
+            return [
+                self::CreateOwnTicket,
+                self::UpdateOwnTicket,
+                self::DeleteOwnTicket
             ];
         }
-
-        return [
-            self::CreateOwnTicket,
-            self::UpdateOwnTicket,
-            self::DeleteOwnTicket
-        ];
     }
 }
