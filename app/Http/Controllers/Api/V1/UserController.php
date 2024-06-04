@@ -34,7 +34,7 @@ class UserController extends ApiController
     {
         try {
             //policy
-            Gate::allows('store', User::class);
+            Gate::authorize('store', User::class);
 
             return new UserResource(User::create($request->mappedAttributes()));
 
@@ -65,7 +65,7 @@ class UserController extends ApiController
             $user = User::findOrFail($userId);
 
             //policy
-            Gate::allows('update', $user);
+            Gate::authorize('update', $user);
 
             $user->update($request->mappedAttributes());
 
@@ -88,7 +88,7 @@ class UserController extends ApiController
             $user = User::findOrFail($userId);
 
             //policy
-            Gate::allows('replace', $user);
+            Gate::authorize('replace', $user);
 
             $user->update($request->mappedAttributes());
 
@@ -108,7 +108,7 @@ class UserController extends ApiController
             $user = User::findOrFail($userId);
 
             //policy
-            Gate::allows('delete', $user);
+            Gate::authorize('delete', $user);
 
             $user->delete();
 
