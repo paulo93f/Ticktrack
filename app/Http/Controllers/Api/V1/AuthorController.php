@@ -21,7 +21,7 @@ class AuthorController extends ApiController
             User::select('users.*')
                 ->join('tickets', 'users.id', '=', 'tickets.user_id')
                 ->filter($filters)
-                ->distinc()
+                ->distinct()
                 ->paginate()
 
         );

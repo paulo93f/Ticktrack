@@ -36,7 +36,7 @@ class StoreTicketRequest extends BaseTicketRequest
         ];
 
         if ($user->tokenCan(Abilities::CreateTicket)) {
-            $rules[$authorIdAttr] .= $authorRule;
+            $rules[$authorIdAttr] = $authorRule;
         }
 
         return $rules;

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api\V1;
 
+use App\Helpers\ApiResponses;
 use App\Http\Filters\V1\UserFilter;
 use App\Http\Requests\Api\V1\ReplaceUserRequest;
 use App\Http\Requests\Api\V1\StoreUserRequest;
@@ -10,7 +11,6 @@ use App\Http\Resources\V1\UserResource;
 use App\Models\User;
 use App\Policies\V1\UserPolicy;
 use Illuminate\Auth\Access\AuthorizationException;
-use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Support\Facades\Gate;
 
 class UserController extends ApiController
@@ -39,7 +39,7 @@ class UserController extends ApiController
             return new UserResource(User::create($request->mappedAttributes()));
 
         } catch (AuthorizationException $exception) {
-            return $this->error('You are not authorize to create this resource', 403);
+            return ApiResponses::notAuthorized('You are not authorize to create this resource');
         }
     }
 
@@ -58,12 +58,10 @@ class UserController extends ApiController
     /**
      * Update the specified resource in storage.
      */
-    public function update(UpdateUserRequest $request, $userId)
+    public function update(UpdateUserRequest $request, User $user)
     {
         //PATCH
         try {
-            $user = User::findOrFail($userId);
-
             //policy
             Gate::authorize('update', $user);
 
@@ -71,22 +69,18 @@ class UserController extends ApiController
 
             return new UserResource($user);
 
-        } catch (ModelNotFoundException $exception) {
-            return $this->error('User cannot be found', 404);
         } catch (AuthorizationException $exception) {
-            return $this->error('You are not authorize to update this resource', 403);
+            return ApiResponses::notAuthorized('You are not authorize to update this resource');
         }
     }
 
     /**
      * Replace the specified resource in storage.
      */
-    public function replace(ReplaceUserRequest $request, $userId)
+    public function replace(ReplaceUserRequest $request, User $user)
     {
         //PUT
         try {
-            $user = User::findOrFail($userId);
-
             //policy
             Gate::authorize('replace', $user);
 
@@ -94,27 +88,25 @@ class UserController extends ApiController
 
             return new UserResource($user);
 
-        } catch (ModelNotFoundException $exception) {
-            return $this->error('User cannot be found', 404);
+        }  catch (AuthorizationException $exception) {
+            return ApiResponses::notAuthorized('You are not authorize to replace this resource');
         }
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($userId)
+    public function destroy(User $user)
     {
         try {
-            $user = User::findOrFail($userId);
-
             //policy
             Gate::authorize('delete', $user);
 
             $user->delete();
 
-            return $this->ok('User successfully deleted');
-        } catch (ModelNotFoundException $exception) {
-            return $this->error('User cannot be found', 404);
+            return ApiResponses::ok('User successfully deleted');
+        } catch (AuthorizationException $exception) {
+            return ApiResponses::notAuthorized('You are not authorize to delete this resource');
         }
 
     }
