@@ -101,6 +101,8 @@ class TicketController extends ApiController
 
         } catch (ModelNotFoundException $exception) {
             return $this->error('Ticket cannot be found', 404);
+        } catch (AuthorizationException $exception) {
+            return $this->error('You are not authorize to replace this resource', 403);
         }
     }
 
@@ -120,6 +122,8 @@ class TicketController extends ApiController
             return $this->ok('Ticket successfully deleted');
         } catch (ModelNotFoundException $exception) {
             return $this->error('Ticket cannot be found', 404);
+        } catch (AuthorizationException $exception) {
+            return $this->error('You are not authorize to delete this resource', 403);
         }
 
     }
