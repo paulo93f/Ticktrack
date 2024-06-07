@@ -27,7 +27,7 @@ Follow these steps to set up the project on your local machine.
 
    ```sh
    git clone https://github.com/paulo93f/TickTrack.git
-   cd ticket-management-api
+   cd TickTrack
    ```
 
 2. **Install dependencies:**
