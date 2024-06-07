@@ -93,6 +93,15 @@ This application uses Laravel Sanctum for API token authentication. To use the A
 Authorization: Bearer your_token
 ```
 
+## Postman collection
+
+I made a postman collection for this API, so you don't have to 😜.
+
+```
+storage/postman/TicketTrack.postman_collection.json
+```
+If you don't know how to import, read the [official documentation](https://learning.postman.com/docs/getting-started/importing-and-exporting/importing-and-exporting-overview/) for the current version.
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.

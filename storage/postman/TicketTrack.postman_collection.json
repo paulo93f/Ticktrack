@@ -1,0 +1,786 @@
+{
+	"info": {
+		"_postman_id": "fdb70a62-578c-4436-9b46-81ef31fb327a",
+		"name": "TicketTrack",
+		"description": "Include all endpoints created for our API TickTrack.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9152337"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "manager@manager.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local_url}}/login",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "{{local_url}}/logout",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "user@test.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "password1234",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{local_url}}/register",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"register"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authors",
+			"item": [
+				{
+					"name": "GET User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{local_url}}/V1/authors/6/tickets",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"authors",
+								"6",
+								"tickets"
+							],
+							"query": [
+								{
+									"key": "filter[status]",
+									"value": "H",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{local_url}}/V1/authors?filter[id]=1,3,5",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"authors"
+							],
+							"query": [
+								{
+									"key": "filter[id]",
+									"value": "1,3,5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST User Ticket",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \"attributes\": {\r\n            \"title\": \"First Ticket created from author request\",\r\n            \"description\": \"This is my first ticket created from author request\",\r\n            \"status\": \"A\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/V1/authors/1/tickets/",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"authors",
+								"1",
+								"tickets",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT User Ticket",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \"attributes\": {\r\n            \"title\": \"Ticket replaced from author.tickets\",\r\n            \"description\": \"This description had been replaced from author.tickets 2\",\r\n            \"status\": \"A\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/V1/authors/6/tickets/105",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"authors",
+								"6",
+								"tickets",
+								"105"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH User Ticket",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \"attributes\": {\r\n            \"title\": \"Ticket PATCHED\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/V1/authors/1/tickets/102",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"authors",
+								"1",
+								"tickets",
+								"102"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE Ticket",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \"attributes\": {\r\n            \"title\": \"First Ticket created from author request\",\r\n            \"description\": \"This is my first ticket created from author request\",\r\n            \"status\": \"A\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/V1/authors/1/tickets/102",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"authors",
+								"1",
+								"tickets",
+								"102"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tickets",
+			"item": [
+				{
+					"name": "GET Ticket",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{local_url}}/V1/tickets/102",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"tickets",
+								"102"
+							],
+							"query": [
+								{
+									"key": "include",
+									"value": "author",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Tickets",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{local_url}}/V1/tickets?sort=createdAt",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"tickets"
+							],
+							"query": [
+								{
+									"key": "include",
+									"value": "author",
+									"disabled": true
+								},
+								{
+									"key": "filter[status]",
+									"value": "A,C",
+									"disabled": true
+								},
+								{
+									"key": "filter[title]",
+									"value": "*dolores*",
+									"disabled": true
+								},
+								{
+									"key": "CreatedAt",
+									"value": "2024-05-15",
+									"disabled": true
+								},
+								{
+									"key": "sort",
+									"value": "createdAt"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST Tickets",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \"attributes\": {\r\n            \"title\": \"New ticket created\",\r\n            \"description\": \"Created after granted granular permissions\",\r\n            \"status\": \"A\"\r\n        },\r\n        \"relationships\": {\r\n            \"author\": { \r\n                \"data\": {\r\n                    \"id\": \"999\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/V1/tickets/",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"tickets",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Tickets",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \"attributes\": {\r\n            \"title\": \"Ticket replaced with other title\",\r\n            \"description\": \"This description had been replaced\",\r\n            \"status\": \"A\"\r\n        },\r\n        \"relationships\": {\r\n            \"author\": { \r\n                \"data\": {\r\n                    \"id\": \"1\"\r\n                }\r\n            }\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/V1/tickets/1",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"tickets",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH Tickets",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \"attributes\": {\r\n            \"description\": \"This description has been patched\",\r\n            \"status\": \"X\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/V1/tickets/8",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"tickets",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE ticket",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/V1/tickets/102",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"tickets",
+								"102"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "GET User",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{local_url}}/V1/users/6",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"users",
+								"6"
+							],
+							"query": [
+								{
+									"key": "filter[status]",
+									"value": "H",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{local_url}}/V1/users",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"users"
+							],
+							"query": [
+								{
+									"key": "filter[id]",
+									"value": "1,3,5",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "POST User",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \"attributes\": {\r\n            \"name\":\"Manager User 5\",\r\n            \"email\":\"user6@manager.com\",\r\n            \"password\":\"password\",\r\n            \"isManager\":false\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/V1/users/",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"users",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PUT User",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \"attributes\": {\r\n            \"name\":\"Manager User\",\r\n            \"email\":\"user3@manager.com\",\r\n            \"password\":\"password\",\r\n            \"isManager\":true\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/V1/users/14",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"users",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PATCH User",
+					"request": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"data\": {\r\n        \"attributes\": {\r\n            \"name\":\"Manager User patched\"\r\n        }\r\n    }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/V1/users/14",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"users",
+								"14"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE User",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_url}}/V1/users/16",
+							"host": [
+								"{{local_url}}"
+							],
+							"path": [
+								"V1",
+								"users",
+								"16"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "local_url",
+			"value": "localhost:8000/api",
+			"type": "string"
+		},
+		{
+			"key": "production_url",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "7|O8uqPttI8k1QdFn3CXHtdey5BOH270oKLt26bqWcf3e072f1",
+			"type": "string"
+		}
+	]
+}
