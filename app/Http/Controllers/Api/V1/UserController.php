@@ -18,7 +18,14 @@ class UserController extends ApiController
     protected $policyClass = UserPolicy::class;
 
     /**
-     * Display a listing of the resource.
+     * Get all users
+     *
+     * @group Managing Users
+     *
+     * @queryParam sort string Data field(s) to sort by. Separate multiple fields with commas. Denote descending sort with a minus sign. Example: sort=name
+     * @queryParam filter[name] Filter by status name. Wildcards are supported. No-example
+     * @queryParam filter[email] Filter by email. Wildcards are supported. No-example
+     *
      */
     public function index(UserFilter $filters)
     {
@@ -28,7 +35,11 @@ class UserController extends ApiController
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Create a user
+     *
+     * @group Managing Users
+     *
+     * @response 200 {"data":{"type":"user","id":16,"attributes":{"name":"My User","email":"user@user.com","isManager":false},"links":{"self":"http:\/\/localhost:8000\/api\/v1\/authors\/16"}}}
      */
     public function store(StoreUserRequest $request)
     {
@@ -44,7 +55,11 @@ class UserController extends ApiController
     }
 
     /**
-     * Display the specified resource.
+     * Display a user
+     *
+     * @group Managing Users
+     *
+     *
      */
     public function show(User $user)
     {
@@ -56,7 +71,11 @@ class UserController extends ApiController
     }
 
     /**
-     * Update the specified resource in storage.
+     * Update a user
+     *
+     * @group Managing Users
+     *
+     * @response 200 {"data":{"type":"user","id":16,"attributes":{"name":"My User","email":"user@user.com","isManager":false},"links":{"self":"http:\/\/localhost:8000\/api\/v1\/authors\/16"}}}
      */
     public function update(UpdateUserRequest $request, User $user)
     {
@@ -75,7 +94,11 @@ class UserController extends ApiController
     }
 
     /**
-     * Replace the specified resource in storage.
+     * Replace a user
+     *
+     * @group Managing Users
+     *
+     * @response 200 {"data":{"type":"user","id":16,"attributes":{"name":"My User","email":"user@user.com","isManager":false},"links":{"self":"http:\/\/localhost:8000\/api\/v1\/authors\/16"}}}
      */
     public function replace(ReplaceUserRequest $request, User $user)
     {
@@ -94,7 +117,11 @@ class UserController extends ApiController
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Delete a user
+     *
+     * @group Managing Users
+     *
+     * @response 200 {}
      */
     public function destroy(User $user)
     {

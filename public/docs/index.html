@@ -26,7 +26,7 @@
             </style>
 
     <script>
-        var tryItOutBaseUrl = "http://localhost:8000";
+        var tryItOutBaseUrl = "http://localhost";
         var useCsrf = Boolean();
         var csrfUrl = "/sanctum/csrf-cookie";
     </script>
@@ -87,65 +87,90 @@
                                                     <li class="tocify-item level-2" data-unique="endpoints-POSTapi-register">
                                 <a href="#endpoints-POSTapi-register">POST api/register</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-tickets">
-                                <a href="#endpoints-GETapi-V1-tickets">Display a listing of the resource.</a>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-managing-tickets" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="managing-tickets">
+                    <a href="#managing-tickets">Managing Tickets</a>
+                </li>
+                                    <ul id="tocify-subheader-managing-tickets" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="managing-tickets-GETapi-V1-tickets">
+                                <a href="#managing-tickets-GETapi-V1-tickets">Get all tickets</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-V1-tickets">
-                                <a href="#endpoints-POSTapi-V1-tickets">Store a newly created resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-tickets-POSTapi-V1-tickets">
+                                <a href="#managing-tickets-POSTapi-V1-tickets">Create a ticket</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-tickets--id-">
-                                <a href="#endpoints-GETapi-V1-tickets--id-">Display the specified resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-tickets-GETapi-V1-tickets--id-">
+                                <a href="#managing-tickets-GETapi-V1-tickets--id-">Show a specific ticket.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-V1-tickets--id-">
-                                <a href="#endpoints-DELETEapi-V1-tickets--id-">Remove the specified resource from storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-tickets-DELETEapi-V1-tickets--id-">
+                                <a href="#managing-tickets-DELETEapi-V1-tickets--id-">Delete ticket.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-V1-tickets--ticket_id-">
-                                <a href="#endpoints-PUTapi-V1-tickets--ticket_id-">Replace the specified resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-tickets-PUTapi-V1-tickets--ticket_id-">
+                                <a href="#managing-tickets-PUTapi-V1-tickets--ticket_id-">Replace Ticket</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PATCHapi-V1-tickets--ticket_id-">
-                                <a href="#endpoints-PATCHapi-V1-tickets--ticket_id-">Update the specified resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-tickets-PATCHapi-V1-tickets--ticket_id-">
+                                <a href="#managing-tickets-PATCHapi-V1-tickets--ticket_id-">Update Ticket</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-users">
-                                <a href="#endpoints-GETapi-V1-users">Display a listing of the resource.</a>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-managing-tickets-by-author" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="managing-tickets-by-author">
+                    <a href="#managing-tickets-by-author">Managing Tickets by Author</a>
+                </li>
+                                    <ul id="tocify-subheader-managing-tickets-by-author" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="managing-tickets-by-author-GETapi-V1-authors--author_id--tickets">
+                                <a href="#managing-tickets-by-author-GETapi-V1-authors--author_id--tickets">Get all tickets</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-V1-users">
-                                <a href="#endpoints-POSTapi-V1-users">Store a newly created resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-tickets-by-author-POSTapi-V1-authors--author_id--tickets">
+                                <a href="#managing-tickets-by-author-POSTapi-V1-authors--author_id--tickets">Create a ticket</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-users--id-">
-                                <a href="#endpoints-GETapi-V1-users--id-">Display the specified resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-tickets-by-author-DELETEapi-V1-authors--author_id--tickets--id-">
+                                <a href="#managing-tickets-by-author-DELETEapi-V1-authors--author_id--tickets--id-">Delete an author's ticket</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-V1-users--id-">
-                                <a href="#endpoints-DELETEapi-V1-users--id-">Remove the specified resource from storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-tickets-by-author-PUTapi-V1-authors--authorId--tickets--ticketId-">
+                                <a href="#managing-tickets-by-author-PUTapi-V1-authors--authorId--tickets--ticketId-">Replace an author's ticket</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-V1-users--user_id-">
-                                <a href="#endpoints-PUTapi-V1-users--user_id-">Replace the specified resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-tickets-by-author-PATCHapi-V1-authors--authorId--tickets--ticketId-">
+                                <a href="#managing-tickets-by-author-PATCHapi-V1-authors--authorId--tickets--ticketId-">Update an author's ticket</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PATCHapi-V1-users--user_id-">
-                                <a href="#endpoints-PATCHapi-V1-users--user_id-">Update the specified resource in storage.</a>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-managing-users" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="managing-users">
+                    <a href="#managing-users">Managing Users</a>
+                </li>
+                                    <ul id="tocify-subheader-managing-users" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="managing-users-GETapi-V1-users">
+                                <a href="#managing-users-GETapi-V1-users">Get all users</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-authors">
-                                <a href="#endpoints-GETapi-V1-authors">Display a listing of the resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-users-POSTapi-V1-users">
+                                <a href="#managing-users-POSTapi-V1-users">Create a user</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-authors--id-">
-                                <a href="#endpoints-GETapi-V1-authors--id-">Display the specified resource.</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-users-GETapi-V1-users--id-">
+                                <a href="#managing-users-GETapi-V1-users--id-">Display a user</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-V1-authors--id-">
-                                <a href="#endpoints-DELETEapi-V1-authors--id-">Remove the specified resource from storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-users-DELETEapi-V1-users--id-">
+                                <a href="#managing-users-DELETEapi-V1-users--id-">Delete a user</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-GETapi-V1-authors--author_id--tickets">
-                                <a href="#endpoints-GETapi-V1-authors--author_id--tickets">GET api/V1/authors/{author_id}/tickets</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-users-PUTapi-V1-users--user_id-">
+                                <a href="#managing-users-PUTapi-V1-users--user_id-">Replace a user</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-POSTapi-V1-authors--author_id--tickets">
-                                <a href="#endpoints-POSTapi-V1-authors--author_id--tickets">Store a newly created resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="managing-users-PATCHapi-V1-users--user_id-">
+                                <a href="#managing-users-PATCHapi-V1-users--user_id-">Update a user</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-DELETEapi-V1-authors--author_id--tickets--id-">
-                                <a href="#endpoints-DELETEapi-V1-authors--author_id--tickets--id-">Remove the specified resource from storage.</a>
+                                                                        </ul>
+                            </ul>
+                    <ul id="tocify-header-showing-authors" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="showing-authors">
+                    <a href="#showing-authors">Showing Authors</a>
+                </li>
+                                    <ul id="tocify-subheader-showing-authors" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="showing-authors-GETapi-V1-authors">
+                                <a href="#showing-authors-GETapi-V1-authors">Get authors.</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PUTapi-V1-authors--authorId--tickets--ticketId-">
-                                <a href="#endpoints-PUTapi-V1-authors--authorId--tickets--ticketId-">Replace the specified resource in storage.</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="endpoints-PATCHapi-V1-authors--authorId--tickets--ticketId-">
-                                <a href="#endpoints-PATCHapi-V1-authors--authorId--tickets--ticketId-">Update the specified resource in storage.</a>
+                                                                                <li class="tocify-item level-2" data-unique="showing-authors-GETapi-V1-authors--id-">
+                                <a href="#showing-authors-GETapi-V1-authors--id-">Get an author.</a>
                             </li>
                                                                         </ul>
                             </ul>
@@ -199,8 +224,8 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"priscilla74@example.org\",
-    \"password\": \"j]Buu&amp;\'\\\\K\"
+    \"email\": \"ccrona@example.net\",
+    \"password\": \"#UKx&lt;qfseW\"
 }"
 </code></pre></div>
 
@@ -216,8 +241,8 @@ const headers = {
 };
 
 let body = {
-    "email": "priscilla74@example.org",
-    "password": "j]Buu&amp;'\\K"
+    "email": "ccrona@example.net",
+    "password": "#UKx&lt;qfseW"
 };
 
 fetch(url, {
@@ -319,10 +344,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-login"
-               value="priscilla74@example.org"
+               value="ccrona@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>priscilla74@example.org</code></p>
+<p>Must be a valid email address. Example: <code>ccrona@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -330,10 +355,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-login"
-               value="j]Buu&'\K"
+               value="#UKx<qfseW"
                data-component="body">
     <br>
-<p>Must be at least 8 characters. Example: <code>j]Buu&amp;'\K</code></p>
+<p>Must be at least 8 characters. Example: <code>#UKx&lt;qfseW</code></p>
         </div>
         </form>
 
@@ -592,7 +617,11 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
-                    <h2 id="endpoints-GETapi-V1-tickets">Display a listing of the resource.</h2>
+                <h1 id="managing-tickets">Managing Tickets</h1>
+
+    
+
+                                <h2 id="managing-tickets-GETapi-V1-tickets">Get all tickets</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -606,7 +635,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/tickets" \
+    --get "http://localhost/api/V1/tickets?sort=sort%3Dtitle%2C-createdAt&amp;filter%5Btitle%5D=%2Afix%2A" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -616,6 +645,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/V1/tickets"
 );
+
+const params = {
+    "sort": "sort=title,-createdAt",
+    "filter[title]": "*fix*",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
 
 const headers = {
     "Authorization": "Bearer {YOUR_AUTH_KEY}",
@@ -645,6 +681,54 @@ access-control-allow-origin: *
 
 <code class="language-json" style="max-height: 300px;">{
     &quot;data&quot;: [
+        {
+            &quot;type&quot;: &quot;ticket&quot;,
+            &quot;id&quot;: 103,
+            &quot;attributes&quot;: {
+                &quot;title&quot;: &quot;New ticket created&quot;,
+                &quot;status&quot;: &quot;A&quot;,
+                &quot;createdAt&quot;: &quot;2024-06-06T19:22:47.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2024-06-06T19:22:47.000000Z&quot;
+            },
+            &quot;relationships&quot;: {
+                &quot;author&quot;: {
+                    &quot;data&quot;: {
+                        &quot;type&quot;: &quot;user&quot;,
+                        &quot;id&quot;: 1
+                    },
+                    &quot;links&quot;: {
+                        &quot;self&quot;: &quot;http://localhost/api/V1/authors/1&quot;
+                    }
+                }
+            },
+            &quot;links&quot;: {
+                &quot;self&quot;: &quot;http://localhost/api/V1/tickets/103&quot;
+            }
+        },
+        {
+            &quot;type&quot;: &quot;ticket&quot;,
+            &quot;id&quot;: 101,
+            &quot;attributes&quot;: {
+                &quot;title&quot;: &quot;New ticket created&quot;,
+                &quot;status&quot;: &quot;A&quot;,
+                &quot;createdAt&quot;: &quot;2024-06-03T16:40:41.000000Z&quot;,
+                &quot;updatedAt&quot;: &quot;2024-06-03T16:40:41.000000Z&quot;
+            },
+            &quot;relationships&quot;: {
+                &quot;author&quot;: {
+                    &quot;data&quot;: {
+                        &quot;type&quot;: &quot;user&quot;,
+                        &quot;id&quot;: 1
+                    },
+                    &quot;links&quot;: {
+                        &quot;self&quot;: &quot;http://localhost/api/V1/authors/1&quot;
+                    }
+                }
+            },
+            &quot;links&quot;: {
+                &quot;self&quot;: &quot;http://localhost/api/V1/tickets/101&quot;
+            }
+        },
         {
             &quot;type&quot;: &quot;ticket&quot;,
             &quot;id&quot;: 1,
@@ -956,54 +1040,6 @@ access-control-allow-origin: *
             &quot;links&quot;: {
                 &quot;self&quot;: &quot;http://localhost/api/V1/tickets/13&quot;
             }
-        },
-        {
-            &quot;type&quot;: &quot;ticket&quot;,
-            &quot;id&quot;: 14,
-            &quot;attributes&quot;: {
-                &quot;title&quot;: &quot;dicta officiis occaecati&quot;,
-                &quot;status&quot;: &quot;A&quot;,
-                &quot;createdAt&quot;: &quot;2024-06-02T20:22:10.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2024-06-02T20:22:10.000000Z&quot;
-            },
-            &quot;relationships&quot;: {
-                &quot;author&quot;: {
-                    &quot;data&quot;: {
-                        &quot;type&quot;: &quot;user&quot;,
-                        &quot;id&quot;: 2
-                    },
-                    &quot;links&quot;: {
-                        &quot;self&quot;: &quot;http://localhost/api/V1/authors/2&quot;
-                    }
-                }
-            },
-            &quot;links&quot;: {
-                &quot;self&quot;: &quot;http://localhost/api/V1/tickets/14&quot;
-            }
-        },
-        {
-            &quot;type&quot;: &quot;ticket&quot;,
-            &quot;id&quot;: 15,
-            &quot;attributes&quot;: {
-                &quot;title&quot;: &quot;aut quae sed&quot;,
-                &quot;status&quot;: &quot;C&quot;,
-                &quot;createdAt&quot;: &quot;2024-06-02T20:22:10.000000Z&quot;,
-                &quot;updatedAt&quot;: &quot;2024-06-02T20:22:10.000000Z&quot;
-            },
-            &quot;relationships&quot;: {
-                &quot;author&quot;: {
-                    &quot;data&quot;: {
-                        &quot;type&quot;: &quot;user&quot;,
-                        &quot;id&quot;: 9
-                    },
-                    &quot;links&quot;: {
-                        &quot;self&quot;: &quot;http://localhost/api/V1/authors/9&quot;
-                    }
-                }
-            },
-            &quot;links&quot;: {
-                &quot;self&quot;: &quot;http://localhost/api/V1/tickets/15&quot;
-            }
         }
     ],
     &quot;links&quot;: {
@@ -1151,15 +1187,49 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                        </form>
+                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="sort"                data-endpoint="GETapi-V1-tickets"
+               value="sort=title,-createdAt"
+               data-component="query">
+    <br>
+<p>Data field(s) to sort by. Separate multiple fields with commas. Denote descending sort with a minus sign. Example: <code>sort=title,-createdAt</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>filter[status]</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="filter[status]"                data-endpoint="GETapi-V1-tickets"
+               value=""
+               data-component="query">
+    <br>
+<p>Filter by status code: A, C, H, X.</p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>filter[title]</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="filter[title]"                data-endpoint="GETapi-V1-tickets"
+               value="*fix*"
+               data-component="query">
+    <br>
+<p>Filter by title. Wildcards are supported. Example: <code>*fix*</code></p>
+            </div>
+                </form>
 
-                    <h2 id="endpoints-POSTapi-V1-tickets">Store a newly created resource in storage.</h2>
+                    <h2 id="managing-tickets-POSTapi-V1-tickets">Create a ticket</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
 </p>
 
-
+<p>Creates a new ticket record. Users can only create tickets for themselves. Managers can create tickets for any user.</p>
 
 <span id="example-requests-POSTapi-V1-tickets">
 <blockquote>Example request:</blockquote>
@@ -1174,14 +1244,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --data "{
     \"data\": {
         \"attributes\": {
-            \"title\": \"deleniti\",
-            \"description\": \"Incidunt voluptatem et animi aliquam sed.\",
-            \"status\": \"A\"
+            \"title\": \"No-example\",
+            \"description\": \"No-example\",
+            \"status\": \"No-example\"
         },
         \"relationships\": {
             \"author\": {
                 \"data\": {
-                    \"id\": \"3\"
+                    \"id\": 0
                 }
             }
         }
@@ -1204,14 +1274,14 @@ const headers = {
 let body = {
     "data": {
         "attributes": {
-            "title": "deleniti",
-            "description": "Incidunt voluptatem et animi aliquam sed.",
-            "status": "A"
+            "title": "No-example",
+            "description": "No-example",
+            "status": "No-example"
         },
         "relationships": {
             "author": {
                 "data": {
-                    "id": "3"
+                    "id": 0
                 }
             }
         }
@@ -1227,7 +1297,40 @@ fetch(url, {
 </span>
 
 <span id="example-responses-POSTapi-V1-tickets">
-</span>
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: {
+        &quot;type&quot;: &quot;ticket&quot;,
+        &quot;id&quot;: 107,
+        &quot;attributes&quot;: {
+            &quot;title&quot;: &quot;asdfasdfasdfasdfasdfsadf&quot;,
+            &quot;description&quot;: &quot;test ticket&quot;,
+            &quot;status&quot;: &quot;A&quot;,
+            &quot;createdAt&quot;: &quot;2024-03-26T04:40:48.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2024-03-26T04:40:48.000000Z&quot;
+        },
+        &quot;relationships&quot;: {
+            &quot;author&quot;: {
+                &quot;data&quot;: {
+                    &quot;type&quot;: &quot;user&quot;,
+                    &quot;id&quot;: 1
+                },
+                &quot;links&quot;: {
+                    &quot;self&quot;: &quot;http://localhost:8000/api/v1/authors/1&quot;
+                }
+            }
+        },
+        &quot;links&quot;: {
+            &quot;self&quot;: &quot;http://localhost:8000/api/v1/tickets/107&quot;
+        }
+    }
+}</code>
+ </pre>
+    </span>
 <span id="execution-results-POSTapi-V1-tickets" hidden>
     <blockquote>Received response<span
                 id="execution-response-status-POSTapi-V1-tickets"></span>:
@@ -1314,7 +1417,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <summary style="padding-bottom: 10px;">
                 <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
 <small>object</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
 <br>
 
             </summary>
@@ -1323,7 +1426,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <summary style="padding-bottom: 10px;">
                 <b style="line-height: 2;"><code>attributes</code></b>&nbsp;&nbsp;
 <small>object</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
 <br>
 
             </summary>
@@ -1333,10 +1436,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.title"                data-endpoint="POSTapi-V1-tickets"
-               value="deleniti"
+               value="No-example"
                data-component="body">
     <br>
-<p>Example: <code>deleniti</code></p>
+<p>The ticket's title (method). Example: <code>No-example</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -1344,10 +1447,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.description"                data-endpoint="POSTapi-V1-tickets"
-               value="Incidunt voluptatem et animi aliquam sed."
+               value="No-example"
                data-component="body">
     <br>
-<p>Example: <code>Incidunt voluptatem et animi aliquam sed.</code></p>
+<p>The ticket's description. Example: <code>No-example</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -1355,10 +1458,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.status"                data-endpoint="POSTapi-V1-tickets"
-               value="A"
+               value="No-example"
                data-component="body">
     <br>
-<p>Example: <code>A</code></p>
+<p>The ticket's status. Example: <code>No-example</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>A</code></li> <li><code>C</code></li> <li><code>H</code></li> <li><code>X</code></li></ul>
                     </div>
@@ -1369,7 +1472,7 @@ Must be one of:
             <summary style="padding-bottom: 10px;">
                 <b style="line-height: 2;"><code>relationships</code></b>&nbsp;&nbsp;
 <small>object</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
 <br>
 
             </summary>
@@ -1378,7 +1481,7 @@ Must be one of:
             <summary style="padding-bottom: 10px;">
                 <b style="line-height: 2;"><code>author</code></b>&nbsp;&nbsp;
 <small>object</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
 <br>
 
             </summary>
@@ -1387,7 +1490,7 @@ Must be one of:
             <summary style="padding-bottom: 10px;">
                 <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
 <small>object</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
 <br>
 
             </summary>
@@ -1397,10 +1500,10 @@ Must be one of:
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="data.relationships.author.data.id"                data-endpoint="POSTapi-V1-tickets"
-               value="3"
+               value="0"
                data-component="body">
     <br>
-<p>Must be 3. Example: <code>3</code></p>
+<p>The author assigned to the ticket. Example: <code>0</code></p>
                     </div>
                                     </details>
         </div>
@@ -1412,13 +1515,13 @@ Must be one of:
         </div>
         </form>
 
-                    <h2 id="endpoints-GETapi-V1-tickets--id-">Display the specified resource.</h2>
+                    <h2 id="managing-tickets-GETapi-V1-tickets--id-">Show a specific ticket.</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
 </p>
 
-
+<p>Display an individual ticket.</p>
 
 <span id="example-requests-GETapi-V1-tickets--id-">
 <blockquote>Example request:</blockquote>
@@ -1586,13 +1689,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-DELETEapi-V1-tickets--id-">Remove the specified resource from storage.</h2>
+                    <h2 id="managing-tickets-DELETEapi-V1-tickets--id-">Delete ticket.</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
 </p>
 
-
+<p>Remove the specified resource from storage.</p>
 
 <span id="example-requests-DELETEapi-V1-tickets--id-">
 <blockquote>Example request:</blockquote>
@@ -1720,13 +1823,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-PUTapi-V1-tickets--ticket_id-">Replace the specified resource in storage.</h2>
+                    <h2 id="managing-tickets-PUTapi-V1-tickets--ticket_id-">Replace Ticket</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
 </p>
 
-
+<p>Replace the specified ticket in storage.</p>
 
 <span id="example-requests-PUTapi-V1-tickets--ticket_id-">
 <blockquote>Example request:</blockquote>
@@ -1741,14 +1844,14 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --data "{
     \"data\": {
         \"attributes\": {
-            \"title\": \"adipisci\",
-            \"description\": \"Sit voluptas impedit ipsa quis quod commodi et placeat.\",
-            \"status\": \"X\"
+            \"title\": \"ea\",
+            \"description\": \"Numquam provident tempora iste eaque.\",
+            \"status\": \"H\"
         },
         \"relationships\": {
             \"author\": {
                 \"data\": {
-                    \"id\": 15
+                    \"id\": 8
                 }
             }
         }
@@ -1771,14 +1874,14 @@ const headers = {
 let body = {
     "data": {
         "attributes": {
-            "title": "adipisci",
-            "description": "Sit voluptas impedit ipsa quis quod commodi et placeat.",
-            "status": "X"
+            "title": "ea",
+            "description": "Numquam provident tempora iste eaque.",
+            "status": "H"
         },
         "relationships": {
             "author": {
                 "data": {
-                    "id": 15
+                    "id": 8
                 }
             }
         }
@@ -1893,7 +1996,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <summary style="padding-bottom: 10px;">
                 <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
 <small>object</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
 <br>
 
             </summary>
@@ -1902,7 +2005,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <summary style="padding-bottom: 10px;">
                 <b style="line-height: 2;"><code>attributes</code></b>&nbsp;&nbsp;
 <small>object</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
 <br>
 
             </summary>
@@ -1912,10 +2015,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.title"                data-endpoint="PUTapi-V1-tickets--ticket_id-"
-               value="adipisci"
+               value="ea"
                data-component="body">
     <br>
-<p>Example: <code>adipisci</code></p>
+<p>Example: <code>ea</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -1923,10 +2026,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.description"                data-endpoint="PUTapi-V1-tickets--ticket_id-"
-               value="Sit voluptas impedit ipsa quis quod commodi et placeat."
+               value="Numquam provident tempora iste eaque."
                data-component="body">
     <br>
-<p>Example: <code>Sit voluptas impedit ipsa quis quod commodi et placeat.</code></p>
+<p>Example: <code>Numquam provident tempora iste eaque.</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -1934,10 +2037,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.status"                data-endpoint="PUTapi-V1-tickets--ticket_id-"
-               value="X"
+               value="H"
                data-component="body">
     <br>
-<p>Example: <code>X</code></p>
+<p>Example: <code>H</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>A</code></li> <li><code>C</code></li> <li><code>H</code></li> <li><code>X</code></li></ul>
                     </div>
@@ -1948,7 +2051,7 @@ Must be one of:
             <summary style="padding-bottom: 10px;">
                 <b style="line-height: 2;"><code>relationships</code></b>&nbsp;&nbsp;
 <small>object</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
 <br>
 
             </summary>
@@ -1957,7 +2060,7 @@ Must be one of:
             <summary style="padding-bottom: 10px;">
                 <b style="line-height: 2;"><code>author</code></b>&nbsp;&nbsp;
 <small>object</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
 <br>
 
             </summary>
@@ -1966,7 +2069,7 @@ Must be one of:
             <summary style="padding-bottom: 10px;">
                 <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
 <small>object</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
 <br>
 
             </summary>
@@ -1976,10 +2079,10 @@ Must be one of:
  &nbsp;
                 <input type="number" style="display: none"
                step="any"               name="data.relationships.author.data.id"                data-endpoint="PUTapi-V1-tickets--ticket_id-"
-               value="15"
+               value="8"
                data-component="body">
     <br>
-<p>Example: <code>15</code></p>
+<p>Example: <code>8</code></p>
                     </div>
                                     </details>
         </div>
@@ -1991,13 +2094,13 @@ Must be one of:
         </div>
         </form>
 
-                    <h2 id="endpoints-PATCHapi-V1-tickets--ticket_id-">Update the specified resource in storage.</h2>
+                    <h2 id="managing-tickets-PATCHapi-V1-tickets--ticket_id-">Update Ticket</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
 </p>
 
-
+<p>Update the specified ticket in storage.</p>
 
 <span id="example-requests-PATCHapi-V1-tickets--ticket_id-">
 <blockquote>Example request:</blockquote>
@@ -2012,13 +2115,15 @@ Must be one of:
     --data "{
     \"data\": {
         \"attributes\": {
-            \"title\": \"ratione\",
-            \"description\": \"Dignissimos earum consequatur voluptas.\",
-            \"status\": \"C\"
+            \"title\": \"repellat\",
+            \"description\": \"Repellat praesentium omnis sed officia mollitia et expedita illo.\",
+            \"status\": \"H\"
         },
         \"relationships\": {
             \"author\": {
-                \"data\": []
+                \"data\": {
+                    \"id\": 16
+                }
             }
         }
     }
@@ -2040,13 +2145,15 @@ const headers = {
 let body = {
     "data": {
         "attributes": {
-            "title": "ratione",
-            "description": "Dignissimos earum consequatur voluptas.",
-            "status": "C"
+            "title": "repellat",
+            "description": "Repellat praesentium omnis sed officia mollitia et expedita illo.",
+            "status": "H"
         },
         "relationships": {
             "author": {
-                "data": []
+                "data": {
+                    "id": 16
+                }
             }
         }
     }
@@ -2179,10 +2286,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.title"                data-endpoint="PATCHapi-V1-tickets--ticket_id-"
-               value="ratione"
+               value="repellat"
                data-component="body">
     <br>
-<p>Example: <code>ratione</code></p>
+<p>Example: <code>repellat</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
@@ -2190,10 +2297,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.description"                data-endpoint="PATCHapi-V1-tickets--ticket_id-"
-               value="Dignissimos earum consequatur voluptas."
+               value="Repellat praesentium omnis sed officia mollitia et expedita illo."
                data-component="body">
     <br>
-<p>Example: <code>Dignissimos earum consequatur voluptas.</code></p>
+<p>Example: <code>Repellat praesentium omnis sed officia mollitia et expedita illo.</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
@@ -2201,10 +2308,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.status"                data-endpoint="PATCHapi-V1-tickets--ticket_id-"
-               value="C"
+               value="H"
                data-component="body">
     <br>
-<p>Example: <code>C</code></p>
+<p>Example: <code>H</code></p>
 Must be one of:
 <ul style="list-style-type: square;"><li><code>A</code></li> <li><code>C</code></li> <li><code>H</code></li> <li><code>X</code></li></ul>
                     </div>
@@ -2239,14 +2346,14 @@ Must be one of:
             </summary>
                                                 <div style="margin-left: 56px; clear: unset;">
                         <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
+<small>integer</small>&nbsp;
 <i>optional</i> &nbsp;
-                <input type="text" style="display: none"
-                              name="data.relationships.author.data.id"                data-endpoint="PATCHapi-V1-tickets--ticket_id-"
-               value=""
+                <input type="number" style="display: none"
+               step="any"               name="data.relationships.author.data.id"                data-endpoint="PATCHapi-V1-tickets--ticket_id-"
+               value="16"
                data-component="body">
     <br>
-
+<p>Example: <code>16</code></p>
                     </div>
                                     </details>
         </div>
@@ -2258,7 +2365,1267 @@ Must be one of:
         </div>
         </form>
 
-                    <h2 id="endpoints-GETapi-V1-users">Display a listing of the resource.</h2>
+                <h1 id="managing-tickets-by-author">Managing Tickets by Author</h1>
+
+    
+
+                                <h2 id="managing-tickets-by-author-GETapi-V1-authors--author_id--tickets">Get all tickets</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Retrieves all tickets created by a specific user.</p>
+
+<span id="example-requests-GETapi-V1-authors--author_id--tickets">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/V1/authors//tickets?sort=sort%3Dname&amp;filter%5Bname%5D=ducimus&amp;filter%5Bemail%5D=perspiciatis" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/authors//tickets"
+);
+
+const params = {
+    "sort": "sort=name",
+    "filter[name]": "ducimus",
+    "filter[email]": "perspiciatis",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-V1-authors--author_id--tickets">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: [
+        {
+            &quot;type&quot;: &quot;user&quot;,
+            &quot;id&quot;: 3,
+            &quot;attributes&quot;: {
+                &quot;name&quot;: &quot;Mr. Henri Beatty MD&quot;,
+                &quot;email&quot;: &quot;bmertz@example.net&quot;,
+                &quot;isManager&quot;: false,
+                &quot;emailVerifiedAt&quot;: &quot;2024-03-14T04:41:51.000000Z&quot;,
+                &quot;createdAt&quot;: &quot;2024-03-14T04:41:51.000000Z&quot;,
+                &quot;udpatedAt&quot;: &quot;2024-03-14T04:41:51.000000Z&quot;
+            },
+            &quot;links&quot;: {
+                &quot;self&quot;: &quot;http://localhost:8000/api/v1/authors/3&quot;
+            }
+        }
+    ],
+    &quot;links&quot;: {
+        &quot;first&quot;: &quot;http://localhost:8000/api/v1/authors?page=1&quot;,
+        &quot;last&quot;: &quot;http://localhost:8000/api/v1/authors?page=1&quot;,
+        &quot;prev&quot;: null,
+        &quot;next&quot;: null
+    },
+    &quot;meta&quot;: {
+        &quot;current_page&quot;: 1,
+        &quot;from&quot;: 1,
+        &quot;last_page&quot;: 1,
+        &quot;links&quot;: [
+            {
+                &quot;url&quot;: null,
+                &quot;label&quot;: &quot;&amp;laquo; Previous&quot;,
+                &quot;active&quot;: false
+            },
+            {
+                &quot;url&quot;: &quot;http://localhost:8000/api/v1/authors?page=1&quot;,
+                &quot;label&quot;: &quot;1&quot;,
+                &quot;active&quot;: true
+            },
+            {
+                &quot;url&quot;: null,
+                &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
+                &quot;active&quot;: false
+            }
+        ],
+        &quot;path&quot;: &quot;http://localhost:8000/api/v1/authors&quot;,
+        &quot;per_page&quot;: 15,
+        &quot;to&quot;: 1,
+        &quot;total&quot;: 10
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-V1-authors--author_id--tickets" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-V1-authors--author_id--tickets"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-V1-authors--author_id--tickets"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-V1-authors--author_id--tickets" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-V1-authors--author_id--tickets">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-GETapi-V1-authors--author_id--tickets" data-method="GET"
+      data-path="api/V1/authors/{author_id}/tickets"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-authors--author_id--tickets', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-V1-authors--author_id--tickets"
+                    onclick="tryItOut('GETapi-V1-authors--author_id--tickets');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-V1-authors--author_id--tickets"
+                    onclick="cancelTryOut('GETapi-V1-authors--author_id--tickets');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-V1-authors--author_id--tickets"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/V1/authors/{author_id}/tickets</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-authors--author_id--tickets"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="GETapi-V1-authors--author_id--tickets"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="GETapi-V1-authors--author_id--tickets"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>author_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="author_id"                data-endpoint="GETapi-V1-authors--author_id--tickets"
+               value=""
+               data-component="url">
+    <br>
+<p>The author's ID.</p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="sort"                data-endpoint="GETapi-V1-authors--author_id--tickets"
+               value="sort=name"
+               data-component="query">
+    <br>
+<p>Data field(s) to sort by. Separate multiple fields with commas. Denote descending sort with a minus sign. Example: <code>sort=name</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>filter[name]</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="filter[name]"                data-endpoint="GETapi-V1-authors--author_id--tickets"
+               value="ducimus"
+               data-component="query">
+    <br>
+<p>Filter by name. Wildcards are supported. Example: <code>ducimus</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>filter[email]</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="filter[email]"                data-endpoint="GETapi-V1-authors--author_id--tickets"
+               value="perspiciatis"
+               data-component="query">
+    <br>
+<p>Filter by email. Wildcards are supported. Example: <code>perspiciatis</code></p>
+            </div>
+                </form>
+
+                    <h2 id="managing-tickets-by-author-POSTapi-V1-authors--author_id--tickets">Create a ticket</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Creates a ticket for the specific user.</p>
+
+<span id="example-requests-POSTapi-V1-authors--author_id--tickets">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request POST \
+    "http://localhost/api/V1/authors//tickets" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"data\": {
+        \"attributes\": {
+            \"title\": \"No-example\",
+            \"description\": \"No-example\",
+            \"status\": \"No-example\"
+        }
+    },
+    \"author\": 0
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/authors//tickets"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "data": {
+        "attributes": {
+            "title": "No-example",
+            "description": "No-example",
+            "status": "No-example"
+        }
+    },
+    "author": 0
+};
+
+fetch(url, {
+    method: "POST",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-POSTapi-V1-authors--author_id--tickets">
+</span>
+<span id="execution-results-POSTapi-V1-authors--author_id--tickets" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-POSTapi-V1-authors--author_id--tickets"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-POSTapi-V1-authors--author_id--tickets"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-POSTapi-V1-authors--author_id--tickets" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-POSTapi-V1-authors--author_id--tickets">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-POSTapi-V1-authors--author_id--tickets" data-method="POST"
+      data-path="api/V1/authors/{author_id}/tickets"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('POSTapi-V1-authors--author_id--tickets', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-POSTapi-V1-authors--author_id--tickets"
+                    onclick="tryItOut('POSTapi-V1-authors--author_id--tickets');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-POSTapi-V1-authors--author_id--tickets"
+                    onclick="cancelTryOut('POSTapi-V1-authors--author_id--tickets');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-POSTapi-V1-authors--author_id--tickets"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-black">POST</small>
+            <b><code>api/V1/authors/{author_id}/tickets</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-V1-authors--author_id--tickets"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>author_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="author_id"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
+               value=""
+               data-component="url">
+    <br>
+<p>The author's ID.</p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style=" margin-left: 14px; clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>attributes</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style="margin-left: 28px; clear: unset;">
+                        <b style="line-height: 2;"><code>title</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="data.attributes.title"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
+               value="No-example"
+               data-component="body">
+    <br>
+<p>The ticket's title (method). Example: <code>No-example</code></p>
+                    </div>
+                                                                <div style="margin-left: 28px; clear: unset;">
+                        <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="data.attributes.description"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
+               value="No-example"
+               data-component="body">
+    <br>
+<p>The ticket's description. Example: <code>No-example</code></p>
+                    </div>
+                                                                <div style="margin-left: 28px; clear: unset;">
+                        <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="data.attributes.status"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
+               value="No-example"
+               data-component="body">
+    <br>
+<p>The ticket's status. Example: <code>No-example</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>A</code></li> <li><code>C</code></li> <li><code>H</code></li> <li><code>X</code></li></ul>
+                    </div>
+                                    </details>
+        </div>
+                                        </details>
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>author</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="author"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
+               value="0"
+               data-component="body">
+    <br>
+<p>The author assigned to the ticket. Example: <code>0</code></p>
+        </div>
+        </form>
+
+                    <h2 id="managing-tickets-by-author-DELETEapi-V1-authors--author_id--tickets--id-">Delete an author&#039;s ticket</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Deletes an author's ticket.</p>
+
+<span id="example-requests-DELETEapi-V1-authors--author_id--tickets--id-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request DELETE \
+    "http://localhost/api/V1/authors//tickets/" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/authors//tickets/"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "DELETE",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-DELETEapi-V1-authors--author_id--tickets--id-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{}</code>
+ </pre>
+    </span>
+<span id="execution-results-DELETEapi-V1-authors--author_id--tickets--id-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-DELETEapi-V1-authors--author_id--tickets--id-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-DELETEapi-V1-authors--author_id--tickets--id-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-DELETEapi-V1-authors--author_id--tickets--id-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-DELETEapi-V1-authors--author_id--tickets--id-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-DELETEapi-V1-authors--author_id--tickets--id-" data-method="DELETE"
+      data-path="api/V1/authors/{author_id}/tickets/{id}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-V1-authors--author_id--tickets--id-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-DELETEapi-V1-authors--author_id--tickets--id-"
+                    onclick="tryItOut('DELETEapi-V1-authors--author_id--tickets--id-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-DELETEapi-V1-authors--author_id--tickets--id-"
+                    onclick="cancelTryOut('DELETEapi-V1-authors--author_id--tickets--id-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-DELETEapi-V1-authors--author_id--tickets--id-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-red">DELETE</small>
+            <b><code>api/V1/authors/{author_id}/tickets/{id}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-V1-authors--author_id--tickets--id-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="DELETEapi-V1-authors--author_id--tickets--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="DELETEapi-V1-authors--author_id--tickets--id-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>author_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="author_id"                data-endpoint="DELETEapi-V1-authors--author_id--tickets--id-"
+               value=""
+               data-component="url">
+    <br>
+<p>The author's ID.</p>
+            </div>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="id"                data-endpoint="DELETEapi-V1-authors--author_id--tickets--id-"
+               value=""
+               data-component="url">
+    <br>
+<p>The ticket ID.</p>
+            </div>
+                    </form>
+
+                    <h2 id="managing-tickets-by-author-PUTapi-V1-authors--authorId--tickets--ticketId-">Replace an author&#039;s ticket</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Replaces an author's ticket.</p>
+
+<span id="example-requests-PUTapi-V1-authors--authorId--tickets--ticketId-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PUT \
+    "http://localhost/api/V1/authors/aperiam/tickets/1" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"data\": {
+        \"attributes\": {
+            \"title\": \"non\",
+            \"description\": \"Maiores voluptatibus eius et ut atque expedita quas et.\",
+            \"status\": \"H\"
+        },
+        \"relationships\": {
+            \"author\": {
+                \"data\": {
+                    \"id\": 10
+                }
+            }
+        }
+    }
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/authors/aperiam/tickets/1"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "data": {
+        "attributes": {
+            "title": "non",
+            "description": "Maiores voluptatibus eius et ut atque expedita quas et.",
+            "status": "H"
+        },
+        "relationships": {
+            "author": {
+                "data": {
+                    "id": 10
+                }
+            }
+        }
+    }
+};
+
+fetch(url, {
+    method: "PUT",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PUTapi-V1-authors--authorId--tickets--ticketId-">
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: {
+        &quot;type&quot;: &quot;ticket&quot;,
+        &quot;id&quot;: 107,
+        &quot;attributes&quot;: {
+            &quot;title&quot;: &quot;asdfasdfasdfasdfasdfsadf&quot;,
+            &quot;description&quot;: &quot;test ticket&quot;,
+            &quot;status&quot;: &quot;A&quot;,
+            &quot;createdAt&quot;: &quot;2024-03-26T04:40:48.000000Z&quot;,
+            &quot;updatedAt&quot;: &quot;2024-03-26T04:40:48.000000Z&quot;
+        },
+        &quot;relationships&quot;: {
+            &quot;author&quot;: {
+                &quot;data&quot;: {
+                    &quot;type&quot;: &quot;user&quot;,
+                    &quot;id&quot;: 1
+                },
+                &quot;links&quot;: {
+                    &quot;self&quot;: &quot;http://localhost:8000/api/v1/authors/1&quot;
+                }
+            }
+        },
+        &quot;links&quot;: {
+            &quot;self&quot;: &quot;http://localhost:8000/api/v1/tickets/107&quot;
+        }
+    }
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-PUTapi-V1-authors--authorId--tickets--ticketId-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PUTapi-V1-authors--authorId--tickets--ticketId-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PUTapi-V1-authors--authorId--tickets--ticketId-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PUTapi-V1-authors--authorId--tickets--ticketId-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PUTapi-V1-authors--authorId--tickets--ticketId-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PUTapi-V1-authors--authorId--tickets--ticketId-" data-method="PUT"
+      data-path="api/V1/authors/{authorId}/tickets/{ticketId}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PUTapi-V1-authors--authorId--tickets--ticketId-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PUTapi-V1-authors--authorId--tickets--ticketId-"
+                    onclick="tryItOut('PUTapi-V1-authors--authorId--tickets--ticketId-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PUTapi-V1-authors--authorId--tickets--ticketId-"
+                    onclick="cancelTryOut('PUTapi-V1-authors--authorId--tickets--ticketId-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PUTapi-V1-authors--authorId--tickets--ticketId-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-darkblue">PUT</small>
+            <b><code>api/V1/authors/{authorId}/tickets/{ticketId}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>authorId</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="authorId"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
+               value="aperiam"
+               data-component="url">
+    <br>
+<p>Example: <code>aperiam</code></p>
+            </div>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>ticketId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="ticketId"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
+               value="1"
+               data-component="url">
+    <br>
+<p>Example: <code>1</code></p>
+            </div>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>author_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="author_id"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
+               value=""
+               data-component="url">
+    <br>
+<p>The author's ID.</p>
+            </div>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>ticket_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="ticket_id"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
+               value=""
+               data-component="url">
+    <br>
+<p>The ticket ID.</p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style=" margin-left: 14px; clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>attributes</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style="margin-left: 28px; clear: unset;">
+                        <b style="line-height: 2;"><code>title</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="data.attributes.title"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
+               value="non"
+               data-component="body">
+    <br>
+<p>Example: <code>non</code></p>
+                    </div>
+                                                                <div style="margin-left: 28px; clear: unset;">
+                        <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="data.attributes.description"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
+               value="Maiores voluptatibus eius et ut atque expedita quas et."
+               data-component="body">
+    <br>
+<p>Example: <code>Maiores voluptatibus eius et ut atque expedita quas et.</code></p>
+                    </div>
+                                                                <div style="margin-left: 28px; clear: unset;">
+                        <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="data.attributes.status"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
+               value="H"
+               data-component="body">
+    <br>
+<p>Example: <code>H</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>A</code></li> <li><code>C</code></li> <li><code>H</code></li> <li><code>X</code></li></ul>
+                    </div>
+                                    </details>
+        </div>
+                                                                    <div style=" margin-left: 14px; clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>relationships</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style=" margin-left: 28px; clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>author</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style=" margin-left: 42px; clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+ &nbsp;
+<br>
+
+            </summary>
+                                                <div style="margin-left: 56px; clear: unset;">
+                        <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="data.relationships.author.data.id"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
+               value="10"
+               data-component="body">
+    <br>
+<p>Example: <code>10</code></p>
+                    </div>
+                                    </details>
+        </div>
+                                        </details>
+        </div>
+                                        </details>
+        </div>
+                                        </details>
+        </div>
+        </form>
+
+                    <h2 id="managing-tickets-by-author-PATCHapi-V1-authors--authorId--tickets--ticketId-">Update an author&#039;s ticket</h2>
+
+<p>
+<small class="badge badge-darkred">requires authentication</small>
+</p>
+
+<p>Updates an author's ticket.</p>
+
+<span id="example-requests-PATCHapi-V1-authors--authorId--tickets--ticketId-">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request PATCH \
+    "http://localhost/api/V1/authors/sint/tickets/1" \
+    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json" \
+    --data "{
+    \"data\": {
+        \"attributes\": {
+            \"title\": \"ad\",
+            \"description\": \"Officia odio tempora est ipsa in.\",
+            \"status\": \"A\"
+        },
+        \"relationships\": {
+            \"author\": {
+                \"data\": {
+                    \"id\": 3
+                }
+            }
+        }
+    }
+}"
+</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/V1/authors/sint/tickets/1"
+);
+
+const headers = {
+    "Authorization": "Bearer {YOUR_AUTH_KEY}",
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+let body = {
+    "data": {
+        "attributes": {
+            "title": "ad",
+            "description": "Officia odio tempora est ipsa in.",
+            "status": "A"
+        },
+        "relationships": {
+            "author": {
+                "data": {
+                    "id": 3
+                }
+            }
+        }
+    }
+};
+
+fetch(url, {
+    method: "PATCH",
+    headers,
+    body: JSON.stringify(body),
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-PATCHapi-V1-authors--authorId--tickets--ticketId-">
+</span>
+<span id="execution-results-PATCHapi-V1-authors--authorId--tickets--ticketId-" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-PATCHapi-V1-authors--authorId--tickets--ticketId-"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-PATCHapi-V1-authors--authorId--tickets--ticketId-"
+      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-PATCHapi-V1-authors--authorId--tickets--ticketId-" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-PATCHapi-V1-authors--authorId--tickets--ticketId-">
+
+Tip: Check that you&#039;re properly connected to the network.
+If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
+You can check the Dev Tools console for debugging information.</code></pre>
+</span>
+<form id="form-PATCHapi-V1-authors--authorId--tickets--ticketId-" data-method="PATCH"
+      data-path="api/V1/authors/{authorId}/tickets/{ticketId}"
+      data-authed="1"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-V1-authors--authorId--tickets--ticketId-', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-PATCHapi-V1-authors--authorId--tickets--ticketId-"
+                    onclick="tryItOut('PATCHapi-V1-authors--authorId--tickets--ticketId-');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-PATCHapi-V1-authors--authorId--tickets--ticketId-"
+                    onclick="cancelTryOut('PATCHapi-V1-authors--authorId--tickets--ticketId-');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-PATCHapi-V1-authors--authorId--tickets--ticketId-"
+                    data-initial-text="Send Request 💥"
+                    data-loading-text="⏱ Sending..."
+                    hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-purple">PATCH</small>
+            <b><code>api/V1/authors/{authorId}/tickets/{ticketId}</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Authorization" class="auth-value"               data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
+               value="Bearer {YOUR_AUTH_KEY}"
+               data-component="header">
+    <br>
+<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Content-Type"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="Accept"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>authorId</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+                              name="authorId"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
+               value="sint"
+               data-component="url">
+    <br>
+<p>Example: <code>sint</code></p>
+            </div>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>ticketId</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="ticketId"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
+               value="1"
+               data-component="url">
+    <br>
+<p>Example: <code>1</code></p>
+            </div>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>author_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="author_id"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
+               value=""
+               data-component="url">
+    <br>
+<p>The author's ID.</p>
+            </div>
+                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>ticket_id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+ &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="ticket_id"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
+               value=""
+               data-component="url">
+    <br>
+<p>The ticket ID.</p>
+            </div>
+                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
+        <div style=" padding-left: 28px;  clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+<i>optional</i> &nbsp;
+<br>
+
+            </summary>
+                                                <div style=" margin-left: 14px; clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>attributes</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+<i>optional</i> &nbsp;
+<br>
+
+            </summary>
+                                                <div style="margin-left: 28px; clear: unset;">
+                        <b style="line-height: 2;"><code>title</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="data.attributes.title"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
+               value="ad"
+               data-component="body">
+    <br>
+<p>Example: <code>ad</code></p>
+                    </div>
+                                                                <div style="margin-left: 28px; clear: unset;">
+                        <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="data.attributes.description"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
+               value="Officia odio tempora est ipsa in."
+               data-component="body">
+    <br>
+<p>Example: <code>Officia odio tempora est ipsa in.</code></p>
+                    </div>
+                                                                <div style="margin-left: 28px; clear: unset;">
+                        <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="data.attributes.status"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
+               value="A"
+               data-component="body">
+    <br>
+<p>Example: <code>A</code></p>
+Must be one of:
+<ul style="list-style-type: square;"><li><code>A</code></li> <li><code>C</code></li> <li><code>H</code></li> <li><code>X</code></li></ul>
+                    </div>
+                                    </details>
+        </div>
+                                                                    <div style=" margin-left: 14px; clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>relationships</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+<i>optional</i> &nbsp;
+<br>
+
+            </summary>
+                                                <div style=" margin-left: 28px; clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>author</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+<i>optional</i> &nbsp;
+<br>
+
+            </summary>
+                                                <div style=" margin-left: 42px; clear: unset;">
+        <details>
+            <summary style="padding-bottom: 10px;">
+                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
+<small>object</small>&nbsp;
+<i>optional</i> &nbsp;
+<br>
+
+            </summary>
+                                                <div style="margin-left: 56px; clear: unset;">
+                        <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
+<small>integer</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="number" style="display: none"
+               step="any"               name="data.relationships.author.data.id"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
+               value="3"
+               data-component="body">
+    <br>
+<p>Example: <code>3</code></p>
+                    </div>
+                                    </details>
+        </div>
+                                        </details>
+        </div>
+                                        </details>
+        </div>
+                                        </details>
+        </div>
+        </form>
+
+                <h1 id="managing-users">Managing Users</h1>
+
+    
+
+                                <h2 id="managing-users-GETapi-V1-users">Get all users</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -2272,7 +3639,7 @@ Must be one of:
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/users" \
+    --get "http://localhost/api/V1/users?sort=sort%3Dname" \
     --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
@@ -2282,6 +3649,12 @@ Must be one of:
     <pre><code class="language-javascript">const url = new URL(
     "http://localhost/api/V1/users"
 );
+
+const params = {
+    "sort": "sort=name",
+};
+Object.keys(params)
+    .forEach(key =&gt; url.searchParams.append(key, params[key]));
 
 const headers = {
     "Authorization": "Bearer {YOUR_AUTH_KEY}",
@@ -2583,9 +3956,43 @@ You can check the Dev Tools console for debugging information.</code></pre>
     <br>
 <p>Example: <code>application/json</code></p>
             </div>
-                        </form>
+                            <h4 class="fancy-heading-panel"><b>Query Parameters</b></h4>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>sort</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="sort"                data-endpoint="GETapi-V1-users"
+               value="sort=name"
+               data-component="query">
+    <br>
+<p>Data field(s) to sort by. Separate multiple fields with commas. Denote descending sort with a minus sign. Example: <code>sort=name</code></p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>filter[name]</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="filter[name]"                data-endpoint="GETapi-V1-users"
+               value=""
+               data-component="query">
+    <br>
+<p>Filter by status name. Wildcards are supported.</p>
+            </div>
+                                    <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>filter[email]</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+                              name="filter[email]"                data-endpoint="GETapi-V1-users"
+               value=""
+               data-component="query">
+    <br>
+<p>Filter by email. Wildcards are supported.</p>
+            </div>
+                </form>
 
-                    <h2 id="endpoints-POSTapi-V1-users">Store a newly created resource in storage.</h2>
+                    <h2 id="managing-users-POSTapi-V1-users">Create a user</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -2606,10 +4013,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --data "{
     \"data\": {
         \"attributes\": {
-            \"name\": \"repellat\",
-            \"email\": \"sarah.mueller@example.net\",
-            \"isManager\": true,
-            \"password\": \"%!f&lt;le7!&gt;~B*?V-om\"
+            \"name\": \"accusantium\",
+            \"email\": \"vsanford@example.org\",
+            \"isManager\": false,
+            \"password\": \"EnE3pO\\/^Z!I#-;\"
         }
     }
 }"
@@ -2630,10 +4037,10 @@ const headers = {
 let body = {
     "data": {
         "attributes": {
-            "name": "repellat",
-            "email": "sarah.mueller@example.net",
-            "isManager": true,
-            "password": "%!f&lt;le7!&gt;~B*?V-om"
+            "name": "accusantium",
+            "email": "vsanford@example.org",
+            "isManager": false,
+            "password": "EnE3pO\/^Z!I#-;"
         }
     }
 };
@@ -2647,7 +4054,27 @@ fetch(url, {
 </span>
 
 <span id="example-responses-POSTapi-V1-users">
-</span>
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: {
+        &quot;type&quot;: &quot;user&quot;,
+        &quot;id&quot;: 16,
+        &quot;attributes&quot;: {
+            &quot;name&quot;: &quot;My User&quot;,
+            &quot;email&quot;: &quot;user@user.com&quot;,
+            &quot;isManager&quot;: false
+        },
+        &quot;links&quot;: {
+            &quot;self&quot;: &quot;http://localhost:8000/api/v1/authors/16&quot;
+        }
+    }
+}</code>
+ </pre>
+    </span>
 <span id="execution-results-POSTapi-V1-users" hidden>
     <blockquote>Received response<span
                 id="execution-response-status-POSTapi-V1-users"></span>:
@@ -2753,10 +4180,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.name"                data-endpoint="POSTapi-V1-users"
-               value="repellat"
+               value="accusantium"
                data-component="body">
     <br>
-<p>Example: <code>repellat</code></p>
+<p>Example: <code>accusantium</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -2764,10 +4191,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.email"                data-endpoint="POSTapi-V1-users"
-               value="sarah.mueller@example.net"
+               value="vsanford@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>sarah.mueller@example.net</code></p>
+<p>Must be a valid email address. Example: <code>vsanford@example.org</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>isManager</code></b>&nbsp;&nbsp;
@@ -2788,7 +4215,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>true</code></p>
+<p>Example: <code>false</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -2796,10 +4223,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.password"                data-endpoint="POSTapi-V1-users"
-               value="%!f<le7!>~B*?V-om"
+               value="EnE3pO/^Z!I#-;"
                data-component="body">
     <br>
-<p>Example: <code>%!f&lt;le7!&gt;~B*?V-om</code></p>
+<p>Example: <code>EnE3pO/^Z!I#-;</code></p>
                     </div>
                                     </details>
         </div>
@@ -2807,7 +4234,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-GETapi-V1-users--id-">Display the specified resource.</h2>
+                    <h2 id="managing-users-GETapi-V1-users--id-">Display a user</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -2968,7 +4395,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-DELETEapi-V1-users--id-">Remove the specified resource from storage.</h2>
+                    <h2 id="managing-users-DELETEapi-V1-users--id-">Delete a user</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -3007,7 +4434,14 @@ fetch(url, {
 </span>
 
 <span id="example-responses-DELETEapi-V1-users--id-">
-</span>
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{}</code>
+ </pre>
+    </span>
 <span id="execution-results-DELETEapi-V1-users--id-" hidden>
     <blockquote>Received response<span
                 id="execution-response-status-DELETEapi-V1-users--id-"></span>:
@@ -3102,7 +4536,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                     </form>
 
-                    <h2 id="endpoints-PUTapi-V1-users--user_id-">Replace the specified resource in storage.</h2>
+                    <h2 id="managing-users-PUTapi-V1-users--user_id-">Replace a user</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -3123,10 +4557,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --data "{
     \"data\": {
         \"attributes\": {
-            \"name\": \"architecto\",
-            \"email\": \"yhoeger@example.com\",
-            \"isManager\": false,
-            \"password\": \"7H,E![s.n7`)\"
+            \"name\": \"delectus\",
+            \"email\": \"aimee46@example.com\",
+            \"isManager\": true,
+            \"password\": \"3bqx0.GBR|Cls_le\"
         }
     }
 }"
@@ -3147,10 +4581,10 @@ const headers = {
 let body = {
     "data": {
         "attributes": {
-            "name": "architecto",
-            "email": "yhoeger@example.com",
-            "isManager": false,
-            "password": "7H,E![s.n7`)"
+            "name": "delectus",
+            "email": "aimee46@example.com",
+            "isManager": true,
+            "password": "3bqx0.GBR|Cls_le"
         }
     }
 };
@@ -3164,7 +4598,27 @@ fetch(url, {
 </span>
 
 <span id="example-responses-PUTapi-V1-users--user_id-">
-</span>
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: {
+        &quot;type&quot;: &quot;user&quot;,
+        &quot;id&quot;: 16,
+        &quot;attributes&quot;: {
+            &quot;name&quot;: &quot;My User&quot;,
+            &quot;email&quot;: &quot;user@user.com&quot;,
+            &quot;isManager&quot;: false
+        },
+        &quot;links&quot;: {
+            &quot;self&quot;: &quot;http://localhost:8000/api/v1/authors/16&quot;
+        }
+    }
+}</code>
+ </pre>
+    </span>
 <span id="execution-results-PUTapi-V1-users--user_id-" hidden>
     <blockquote>Received response<span
                 id="execution-response-status-PUTapi-V1-users--user_id-"></span>:
@@ -3263,7 +4717,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <summary style="padding-bottom: 10px;">
                 <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
 <small>object</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
 <br>
 
             </summary>
@@ -3272,7 +4726,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <summary style="padding-bottom: 10px;">
                 <b style="line-height: 2;"><code>attributes</code></b>&nbsp;&nbsp;
 <small>object</small>&nbsp;
-<i>optional</i> &nbsp;
+ &nbsp;
 <br>
 
             </summary>
@@ -3282,10 +4736,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.name"                data-endpoint="PUTapi-V1-users--user_id-"
-               value="architecto"
+               value="delectus"
                data-component="body">
     <br>
-<p>Example: <code>architecto</code></p>
+<p>Example: <code>delectus</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -3293,10 +4747,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.email"                data-endpoint="PUTapi-V1-users--user_id-"
-               value="yhoeger@example.com"
+               value="aimee46@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>yhoeger@example.com</code></p>
+<p>Must be a valid email address. Example: <code>aimee46@example.com</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>isManager</code></b>&nbsp;&nbsp;
@@ -3317,7 +4771,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
             <code>false</code>
         </label>
     <br>
-<p>Example: <code>false</code></p>
+<p>Example: <code>true</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -3325,10 +4779,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.password"                data-endpoint="PUTapi-V1-users--user_id-"
-               value="7H,E![s.n7`)"
+               value="3bqx0.GBR|Cls_le"
                data-component="body">
     <br>
-<p>Example: <code>7H,E![s.n7</code>)`</p>
+<p>Example: <code>3bqx0.GBR|Cls_le</code></p>
                     </div>
                                     </details>
         </div>
@@ -3336,7 +4790,7 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-PATCHapi-V1-users--user_id-">Update the specified resource in storage.</h2>
+                    <h2 id="managing-users-PATCHapi-V1-users--user_id-">Update a user</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
@@ -3357,10 +4811,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
     --data "{
     \"data\": {
         \"attributes\": {
-            \"name\": \"eos\",
-            \"email\": \"flatley.chet@example.org\",
+            \"name\": \"doloremque\",
+            \"email\": \"tmarvin@example.net\",
             \"isManager\": false,
-            \"password\": \"LT%6n6]k~Yv$n\"
+            \"password\": \"51A=LpZ}[}\"
         }
     }
 }"
@@ -3381,10 +4835,10 @@ const headers = {
 let body = {
     "data": {
         "attributes": {
-            "name": "eos",
-            "email": "flatley.chet@example.org",
+            "name": "doloremque",
+            "email": "tmarvin@example.net",
             "isManager": false,
-            "password": "LT%6n6]k~Yv$n"
+            "password": "51A=LpZ}[}"
         }
     }
 };
@@ -3398,7 +4852,27 @@ fetch(url, {
 </span>
 
 <span id="example-responses-PATCHapi-V1-users--user_id-">
-</span>
+            <blockquote>
+            <p>Example response (200):</p>
+        </blockquote>
+                <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;data&quot;: {
+        &quot;type&quot;: &quot;user&quot;,
+        &quot;id&quot;: 16,
+        &quot;attributes&quot;: {
+            &quot;name&quot;: &quot;My User&quot;,
+            &quot;email&quot;: &quot;user@user.com&quot;,
+            &quot;isManager&quot;: false
+        },
+        &quot;links&quot;: {
+            &quot;self&quot;: &quot;http://localhost:8000/api/v1/authors/16&quot;
+        }
+    }
+}</code>
+ </pre>
+    </span>
 <span id="execution-results-PATCHapi-V1-users--user_id-" hidden>
     <blockquote>Received response<span
                 id="execution-response-status-PATCHapi-V1-users--user_id-"></span>:
@@ -3516,10 +4990,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.name"                data-endpoint="PATCHapi-V1-users--user_id-"
-               value="eos"
+               value="doloremque"
                data-component="body">
     <br>
-<p>Example: <code>eos</code></p>
+<p>Example: <code>doloremque</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -3527,10 +5001,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.email"                data-endpoint="PATCHapi-V1-users--user_id-"
-               value="flatley.chet@example.org"
+               value="tmarvin@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>flatley.chet@example.org</code></p>
+<p>Must be a valid email address. Example: <code>tmarvin@example.net</code></p>
                     </div>
                                                                 <div style="margin-left: 28px; clear: unset;">
                         <b style="line-height: 2;"><code>isManager</code></b>&nbsp;&nbsp;
@@ -3559,10 +5033,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="data.attributes.password"                data-endpoint="PATCHapi-V1-users--user_id-"
-               value="LT%6n6]k~Yv$n"
+               value="51A=LpZ}[}"
                data-component="body">
     <br>
-<p>Example: <code>LT%6n6]k~Yv$n</code></p>
+<p>Example: <code>51A=LpZ}[}</code></p>
                     </div>
                                     </details>
         </div>
@@ -3570,13 +5044,17 @@ You can check the Dev Tools console for debugging information.</code></pre>
         </div>
         </form>
 
-                    <h2 id="endpoints-GETapi-V1-authors">Display a listing of the resource.</h2>
+                <h1 id="showing-authors">Showing Authors</h1>
+
+    
+
+                                <h2 id="showing-authors-GETapi-V1-authors">Get authors.</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
 </p>
 
-
+<p>Retrieves all users that created a ticket.</p>
 
 <span id="example-requests-GETapi-V1-authors">
 <blockquote>Example request:</blockquote>
@@ -3921,13 +5399,13 @@ You can check the Dev Tools console for debugging information.</code></pre>
             </div>
                         </form>
 
-                    <h2 id="endpoints-GETapi-V1-authors--id-">Display the specified resource.</h2>
+                    <h2 id="showing-authors-GETapi-V1-authors--id-">Get an author.</h2>
 
 <p>
 <small class="badge badge-darkred">requires authentication</small>
 </p>
 
-
+<p>Retrieves all users that created a ticket.</p>
 
 <span id="example-requests-GETapi-V1-authors--id-">
 <blockquote>Example request:</blockquote>
@@ -4084,1253 +5562,6 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <p>The ID of the author. Example: <code>1</code></p>
             </div>
                     </form>
-
-                    <h2 id="endpoints-DELETEapi-V1-authors--id-">Remove the specified resource from storage.</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-DELETEapi-V1-authors--id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/V1/authors/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/authors/1"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "DELETE",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-DELETEapi-V1-authors--id-">
-</span>
-<span id="execution-results-DELETEapi-V1-authors--id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-DELETEapi-V1-authors--id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEapi-V1-authors--id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-DELETEapi-V1-authors--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEapi-V1-authors--id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-DELETEapi-V1-authors--id-" data-method="DELETE"
-      data-path="api/V1/authors/{id}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-V1-authors--id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-DELETEapi-V1-authors--id-"
-                    onclick="tryItOut('DELETEapi-V1-authors--id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-DELETEapi-V1-authors--id-"
-                    onclick="cancelTryOut('DELETEapi-V1-authors--id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-DELETEapi-V1-authors--id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-red">DELETE</small>
-            <b><code>api/V1/authors/{id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-V1-authors--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="DELETEapi-V1-authors--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="DELETEapi-V1-authors--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="id"                data-endpoint="DELETEapi-V1-authors--id-"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the author. Example: <code>1</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-GETapi-V1-authors--author_id--tickets">GET api/V1/authors/{author_id}/tickets</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-GETapi-V1-authors--author_id--tickets">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/V1/authors/eveniet/tickets" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/authors/eveniet/tickets"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-V1-authors--author_id--tickets">
-            <blockquote>
-            <p>Example response (200):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;data&quot;: [],
-    &quot;links&quot;: {
-        &quot;first&quot;: &quot;http://localhost/api/V1/authors/eveniet/tickets?page=1&quot;,
-        &quot;last&quot;: &quot;http://localhost/api/V1/authors/eveniet/tickets?page=1&quot;,
-        &quot;prev&quot;: null,
-        &quot;next&quot;: null
-    },
-    &quot;meta&quot;: {
-        &quot;current_page&quot;: 1,
-        &quot;from&quot;: null,
-        &quot;last_page&quot;: 1,
-        &quot;links&quot;: [
-            {
-                &quot;url&quot;: null,
-                &quot;label&quot;: &quot;&amp;laquo; Previous&quot;,
-                &quot;active&quot;: false
-            },
-            {
-                &quot;url&quot;: &quot;http://localhost/api/V1/authors/eveniet/tickets?page=1&quot;,
-                &quot;label&quot;: &quot;1&quot;,
-                &quot;active&quot;: true
-            },
-            {
-                &quot;url&quot;: null,
-                &quot;label&quot;: &quot;Next &amp;raquo;&quot;,
-                &quot;active&quot;: false
-            }
-        ],
-        &quot;path&quot;: &quot;http://localhost/api/V1/authors/eveniet/tickets&quot;,
-        &quot;per_page&quot;: 15,
-        &quot;to&quot;: null,
-        &quot;total&quot;: 0
-    }
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-V1-authors--author_id--tickets" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-V1-authors--author_id--tickets"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-V1-authors--author_id--tickets"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-V1-authors--author_id--tickets" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-V1-authors--author_id--tickets">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-GETapi-V1-authors--author_id--tickets" data-method="GET"
-      data-path="api/V1/authors/{author_id}/tickets"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-V1-authors--author_id--tickets', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-V1-authors--author_id--tickets"
-                    onclick="tryItOut('GETapi-V1-authors--author_id--tickets');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-V1-authors--author_id--tickets"
-                    onclick="cancelTryOut('GETapi-V1-authors--author_id--tickets');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-V1-authors--author_id--tickets"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/V1/authors/{author_id}/tickets</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="GETapi-V1-authors--author_id--tickets"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="GETapi-V1-authors--author_id--tickets"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="GETapi-V1-authors--author_id--tickets"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>author_id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="author_id"                data-endpoint="GETapi-V1-authors--author_id--tickets"
-               value="eveniet"
-               data-component="url">
-    <br>
-<p>The ID of the author. Example: <code>eveniet</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-POSTapi-V1-authors--author_id--tickets">Store a newly created resource in storage.</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-POSTapi-V1-authors--author_id--tickets">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/V1/authors/1/tickets" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"data\": {
-        \"attributes\": {
-            \"title\": \"quis\",
-            \"description\": \"Dolor officia nihil commodi tempora et.\",
-            \"status\": \"C\"
-        }
-    },
-    \"author\": \"3\"
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/authors/1/tickets"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "data": {
-        "attributes": {
-            "title": "quis",
-            "description": "Dolor officia nihil commodi tempora et.",
-            "status": "C"
-        }
-    },
-    "author": "3"
-};
-
-fetch(url, {
-    method: "POST",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-POSTapi-V1-authors--author_id--tickets">
-</span>
-<span id="execution-results-POSTapi-V1-authors--author_id--tickets" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-POSTapi-V1-authors--author_id--tickets"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-POSTapi-V1-authors--author_id--tickets"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-POSTapi-V1-authors--author_id--tickets" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-POSTapi-V1-authors--author_id--tickets">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-POSTapi-V1-authors--author_id--tickets" data-method="POST"
-      data-path="api/V1/authors/{author_id}/tickets"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('POSTapi-V1-authors--author_id--tickets', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-POSTapi-V1-authors--author_id--tickets"
-                    onclick="tryItOut('POSTapi-V1-authors--author_id--tickets');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-POSTapi-V1-authors--author_id--tickets"
-                    onclick="cancelTryOut('POSTapi-V1-authors--author_id--tickets');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-POSTapi-V1-authors--author_id--tickets"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-black">POST</small>
-            <b><code>api/V1/authors/{author_id}/tickets</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="POSTapi-V1-authors--author_id--tickets"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>author_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="author_id"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the author. Example: <code>1</code></p>
-            </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
-<br>
-
-            </summary>
-                                                <div style=" margin-left: 14px; clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>attributes</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
-<br>
-
-            </summary>
-                                                <div style="margin-left: 28px; clear: unset;">
-                        <b style="line-height: 2;"><code>title</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="data.attributes.title"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
-               value="quis"
-               data-component="body">
-    <br>
-<p>Example: <code>quis</code></p>
-                    </div>
-                                                                <div style="margin-left: 28px; clear: unset;">
-                        <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="data.attributes.description"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
-               value="Dolor officia nihil commodi tempora et."
-               data-component="body">
-    <br>
-<p>Example: <code>Dolor officia nihil commodi tempora et.</code></p>
-                    </div>
-                                                                <div style="margin-left: 28px; clear: unset;">
-                        <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="data.attributes.status"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
-               value="C"
-               data-component="body">
-    <br>
-<p>Example: <code>C</code></p>
-Must be one of:
-<ul style="list-style-type: square;"><li><code>A</code></li> <li><code>C</code></li> <li><code>H</code></li> <li><code>X</code></li></ul>
-                    </div>
-                                    </details>
-        </div>
-                                        </details>
-        </div>
-                <div style=" padding-left: 28px;  clear: unset;">
-            <b style="line-height: 2;"><code>author</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="author"                data-endpoint="POSTapi-V1-authors--author_id--tickets"
-               value="3"
-               data-component="body">
-    <br>
-<p>Must be 3. Example: <code>3</code></p>
-        </div>
-        </form>
-
-                    <h2 id="endpoints-DELETEapi-V1-authors--author_id--tickets--id-">Remove the specified resource from storage.</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-DELETEapi-V1-authors--author_id--tickets--id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request DELETE \
-    "http://localhost/api/V1/authors/1/tickets/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/authors/1/tickets/1"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "DELETE",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-DELETEapi-V1-authors--author_id--tickets--id-">
-</span>
-<span id="execution-results-DELETEapi-V1-authors--author_id--tickets--id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-DELETEapi-V1-authors--author_id--tickets--id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-DELETEapi-V1-authors--author_id--tickets--id-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-DELETEapi-V1-authors--author_id--tickets--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-DELETEapi-V1-authors--author_id--tickets--id-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-DELETEapi-V1-authors--author_id--tickets--id-" data-method="DELETE"
-      data-path="api/V1/authors/{author_id}/tickets/{id}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('DELETEapi-V1-authors--author_id--tickets--id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-DELETEapi-V1-authors--author_id--tickets--id-"
-                    onclick="tryItOut('DELETEapi-V1-authors--author_id--tickets--id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-DELETEapi-V1-authors--author_id--tickets--id-"
-                    onclick="cancelTryOut('DELETEapi-V1-authors--author_id--tickets--id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-DELETEapi-V1-authors--author_id--tickets--id-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-red">DELETE</small>
-            <b><code>api/V1/authors/{author_id}/tickets/{id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="DELETEapi-V1-authors--author_id--tickets--id-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="DELETEapi-V1-authors--author_id--tickets--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="DELETEapi-V1-authors--author_id--tickets--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>author_id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="author_id"                data-endpoint="DELETEapi-V1-authors--author_id--tickets--id-"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the author. Example: <code>1</code></p>
-            </div>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="id"                data-endpoint="DELETEapi-V1-authors--author_id--tickets--id-"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the ticket. Example: <code>1</code></p>
-            </div>
-                    </form>
-
-                    <h2 id="endpoints-PUTapi-V1-authors--authorId--tickets--ticketId-">Replace the specified resource in storage.</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-PUTapi-V1-authors--authorId--tickets--ticketId-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request PUT \
-    "http://localhost/api/V1/authors/laboriosam/tickets/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"data\": {
-        \"attributes\": {
-            \"title\": \"impedit\",
-            \"description\": \"Consequatur cupiditate non et ullam.\",
-            \"status\": \"C\"
-        },
-        \"relationships\": {
-            \"author\": {
-                \"data\": {
-                    \"id\": 6
-                }
-            }
-        }
-    }
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/authors/laboriosam/tickets/1"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "data": {
-        "attributes": {
-            "title": "impedit",
-            "description": "Consequatur cupiditate non et ullam.",
-            "status": "C"
-        },
-        "relationships": {
-            "author": {
-                "data": {
-                    "id": 6
-                }
-            }
-        }
-    }
-};
-
-fetch(url, {
-    method: "PUT",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-PUTapi-V1-authors--authorId--tickets--ticketId-">
-</span>
-<span id="execution-results-PUTapi-V1-authors--authorId--tickets--ticketId-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-PUTapi-V1-authors--authorId--tickets--ticketId-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-PUTapi-V1-authors--authorId--tickets--ticketId-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-PUTapi-V1-authors--authorId--tickets--ticketId-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PUTapi-V1-authors--authorId--tickets--ticketId-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-PUTapi-V1-authors--authorId--tickets--ticketId-" data-method="PUT"
-      data-path="api/V1/authors/{authorId}/tickets/{ticketId}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PUTapi-V1-authors--authorId--tickets--ticketId-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PUTapi-V1-authors--authorId--tickets--ticketId-"
-                    onclick="tryItOut('PUTapi-V1-authors--authorId--tickets--ticketId-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PUTapi-V1-authors--authorId--tickets--ticketId-"
-                    onclick="cancelTryOut('PUTapi-V1-authors--authorId--tickets--ticketId-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PUTapi-V1-authors--authorId--tickets--ticketId-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-darkblue">PUT</small>
-            <b><code>api/V1/authors/{authorId}/tickets/{ticketId}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>authorId</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="authorId"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
-               value="laboriosam"
-               data-component="url">
-    <br>
-<p>Example: <code>laboriosam</code></p>
-            </div>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>ticketId</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="ticketId"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
-               value="1"
-               data-component="url">
-    <br>
-<p>Example: <code>1</code></p>
-            </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
-<br>
-
-            </summary>
-                                                <div style=" margin-left: 14px; clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>attributes</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
-<br>
-
-            </summary>
-                                                <div style="margin-left: 28px; clear: unset;">
-                        <b style="line-height: 2;"><code>title</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="data.attributes.title"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
-               value="impedit"
-               data-component="body">
-    <br>
-<p>Example: <code>impedit</code></p>
-                    </div>
-                                                                <div style="margin-left: 28px; clear: unset;">
-                        <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="data.attributes.description"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
-               value="Consequatur cupiditate non et ullam."
-               data-component="body">
-    <br>
-<p>Example: <code>Consequatur cupiditate non et ullam.</code></p>
-                    </div>
-                                                                <div style="margin-left: 28px; clear: unset;">
-                        <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="data.attributes.status"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
-               value="C"
-               data-component="body">
-    <br>
-<p>Example: <code>C</code></p>
-Must be one of:
-<ul style="list-style-type: square;"><li><code>A</code></li> <li><code>C</code></li> <li><code>H</code></li> <li><code>X</code></li></ul>
-                    </div>
-                                    </details>
-        </div>
-                                                                    <div style=" margin-left: 14px; clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>relationships</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
-<br>
-
-            </summary>
-                                                <div style=" margin-left: 28px; clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>author</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
-<br>
-
-            </summary>
-                                                <div style=" margin-left: 42px; clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
-<br>
-
-            </summary>
-                                                <div style="margin-left: 56px; clear: unset;">
-                        <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="data.relationships.author.data.id"                data-endpoint="PUTapi-V1-authors--authorId--tickets--ticketId-"
-               value="6"
-               data-component="body">
-    <br>
-<p>Example: <code>6</code></p>
-                    </div>
-                                    </details>
-        </div>
-                                        </details>
-        </div>
-                                        </details>
-        </div>
-                                        </details>
-        </div>
-        </form>
-
-                    <h2 id="endpoints-PATCHapi-V1-authors--authorId--tickets--ticketId-">Update the specified resource in storage.</h2>
-
-<p>
-<small class="badge badge-darkred">requires authentication</small>
-</p>
-
-
-
-<span id="example-requests-PATCHapi-V1-authors--authorId--tickets--ticketId-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request PATCH \
-    "http://localhost/api/V1/authors/doloremque/tickets/1" \
-    --header "Authorization: Bearer {YOUR_AUTH_KEY}" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json" \
-    --data "{
-    \"data\": {
-        \"attributes\": {
-            \"title\": \"sapiente\",
-            \"description\": \"Quia dicta ea voluptatem ipsa architecto et sit.\",
-            \"status\": \"A\"
-        },
-        \"relationships\": {
-            \"author\": {
-                \"data\": []
-            }
-        }
-    }
-}"
-</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/V1/authors/doloremque/tickets/1"
-);
-
-const headers = {
-    "Authorization": "Bearer {YOUR_AUTH_KEY}",
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-let body = {
-    "data": {
-        "attributes": {
-            "title": "sapiente",
-            "description": "Quia dicta ea voluptatem ipsa architecto et sit.",
-            "status": "A"
-        },
-        "relationships": {
-            "author": {
-                "data": []
-            }
-        }
-    }
-};
-
-fetch(url, {
-    method: "PATCH",
-    headers,
-    body: JSON.stringify(body),
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-PATCHapi-V1-authors--authorId--tickets--ticketId-">
-</span>
-<span id="execution-results-PATCHapi-V1-authors--authorId--tickets--ticketId-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-PATCHapi-V1-authors--authorId--tickets--ticketId-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-PATCHapi-V1-authors--authorId--tickets--ticketId-"
-      data-empty-response-text="<Empty response>" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-PATCHapi-V1-authors--authorId--tickets--ticketId-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-PATCHapi-V1-authors--authorId--tickets--ticketId-">
-
-Tip: Check that you&#039;re properly connected to the network.
-If you&#039;re a maintainer of ths API, verify that your API is running and you&#039;ve enabled CORS.
-You can check the Dev Tools console for debugging information.</code></pre>
-</span>
-<form id="form-PATCHapi-V1-authors--authorId--tickets--ticketId-" data-method="PATCH"
-      data-path="api/V1/authors/{authorId}/tickets/{ticketId}"
-      data-authed="1"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('PATCHapi-V1-authors--authorId--tickets--ticketId-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-PATCHapi-V1-authors--authorId--tickets--ticketId-"
-                    onclick="tryItOut('PATCHapi-V1-authors--authorId--tickets--ticketId-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-PATCHapi-V1-authors--authorId--tickets--ticketId-"
-                    onclick="cancelTryOut('PATCHapi-V1-authors--authorId--tickets--ticketId-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-PATCHapi-V1-authors--authorId--tickets--ticketId-"
-                    data-initial-text="Send Request 💥"
-                    data-loading-text="⏱ Sending..."
-                    hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-purple">PATCH</small>
-            <b><code>api/V1/authors/{authorId}/tickets/{ticketId}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Authorization</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Authorization" class="auth-value"               data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
-               value="Bearer {YOUR_AUTH_KEY}"
-               data-component="header">
-    <br>
-<p>Example: <code>Bearer {YOUR_AUTH_KEY}</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Content-Type"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="Accept"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>authorId</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-                              name="authorId"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
-               value="doloremque"
-               data-component="url">
-    <br>
-<p>Example: <code>doloremque</code></p>
-            </div>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>ticketId</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               step="any"               name="ticketId"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
-               value="1"
-               data-component="url">
-    <br>
-<p>Example: <code>1</code></p>
-            </div>
-                            <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
-        <div style=" padding-left: 28px;  clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
-<br>
-
-            </summary>
-                                                <div style=" margin-left: 14px; clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>attributes</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
-<br>
-
-            </summary>
-                                                <div style="margin-left: 28px; clear: unset;">
-                        <b style="line-height: 2;"><code>title</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
-<i>optional</i> &nbsp;
-                <input type="text" style="display: none"
-                              name="data.attributes.title"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
-               value="sapiente"
-               data-component="body">
-    <br>
-<p>Example: <code>sapiente</code></p>
-                    </div>
-                                                                <div style="margin-left: 28px; clear: unset;">
-                        <b style="line-height: 2;"><code>description</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
-<i>optional</i> &nbsp;
-                <input type="text" style="display: none"
-                              name="data.attributes.description"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
-               value="Quia dicta ea voluptatem ipsa architecto et sit."
-               data-component="body">
-    <br>
-<p>Example: <code>Quia dicta ea voluptatem ipsa architecto et sit.</code></p>
-                    </div>
-                                                                <div style="margin-left: 28px; clear: unset;">
-                        <b style="line-height: 2;"><code>status</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
-<i>optional</i> &nbsp;
-                <input type="text" style="display: none"
-                              name="data.attributes.status"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
-               value="A"
-               data-component="body">
-    <br>
-<p>Example: <code>A</code></p>
-Must be one of:
-<ul style="list-style-type: square;"><li><code>A</code></li> <li><code>C</code></li> <li><code>H</code></li> <li><code>X</code></li></ul>
-                    </div>
-                                    </details>
-        </div>
-                                                                    <div style=" margin-left: 14px; clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>relationships</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
-<br>
-
-            </summary>
-                                                <div style=" margin-left: 28px; clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>author</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
-<br>
-
-            </summary>
-                                                <div style=" margin-left: 42px; clear: unset;">
-        <details>
-            <summary style="padding-bottom: 10px;">
-                <b style="line-height: 2;"><code>data</code></b>&nbsp;&nbsp;
-<small>object</small>&nbsp;
-<i>optional</i> &nbsp;
-<br>
-
-            </summary>
-                                                <div style="margin-left: 56px; clear: unset;">
-                        <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>string</small>&nbsp;
-<i>optional</i> &nbsp;
-                <input type="text" style="display: none"
-                              name="data.relationships.author.data.id"                data-endpoint="PATCHapi-V1-authors--authorId--tickets--ticketId-"
-               value=""
-               data-component="body">
-    <br>
-
-                    </div>
-                                    </details>
-        </div>
-                                        </details>
-        </div>
-                                        </details>
-        </div>
-                                        </details>
-        </div>
-        </form>
 
             
 

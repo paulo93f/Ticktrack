@@ -20,10 +20,9 @@ class BaseUserRequest extends FormRequest
         foreach ($attributeMap as $key => $attribute) {
             if ($this->has($key)) {
 
-//                $value = $this->get($key);
-//
-//                if($attribute === 'password') {
-//
+//                $value = $this->input($key);
+//                if ($attribute === 'password') {
+//                    $value = bcrypt($value);
 //                }
 
                 $attributesToUpdate[$attribute] = $this->input($key);
