@@ -2,7 +2,7 @@
 
 # Ticket Management API
 
-This is a Ticket Management API built with Laravel 11. It provides functionality for managing tickets with user roles, including managers and authors. The project uses various tools from the Laravel ecosystem such as Sanctum for authentication token generation and Scribe for API documentation.
+This is a ticket management API built with Laravel 11. It provides functionality for managing tickets with user roles, including managers and authors. The project uses various tools from the Laravel ecosystem such as Sanctum for authentication token generation and Scribe for API documentation.
 
 ## Features
 
